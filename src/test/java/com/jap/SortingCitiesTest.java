@@ -30,26 +30,21 @@ public class SortingCitiesTest {
 	@Test
 	public void toUpperCasee(){
 		String[] actual = object.toUpperCase(cities);
-		assertNotEquals("BERN, LUCERNE, INTERLAKEN, GRINDELWALD, ENGELBERG, GENEVA, MURREN, BASEL, ZERMATT, JUNGFRAUJOCH,",actual);
+		String[] expected = {"BERN", "LUCERNE","INTERLAKEN","GRINDELWALD", "ENGELBERG", "GENEVA","MURREN","BASEL","ZERMATT", "JUNGFRAUJOCH"};
+		assertArrayEquals(expected,actual);
 	}
     //write all the test cases here
 	@Test
 	public void greaterCitessFailure(){
 			
-			String[] actual = object.greaterCites(distance,cities);
-		assertNotEquals("LUCERNE",actual);
+			String actual = object.greaterCites(distance,cities);
+		assertEquals("Geneva",actual);
 	}
 	@Test
 	public void nearZurichh(){
 
-		String []actual = object.nearZurich(distance,cities);
-		assertEquals("GENEVA",actual);
+		String actual = object.nearZurich(distance,cities);
+		assertEquals("Lucerne",actual);
 	}
-	@Test
-	public void greaterCites(){
 
-		String[] actual = object.greaterCites(distance,cities);
-		assertEquals("LUCERNE",actual);
-	}
-	
 }
