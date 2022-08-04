@@ -34,16 +34,22 @@ public class SortingCitiesTest {
 	}
     //write all the test cases here
 	@Test
-	public void greaterCitess(){
+	public void greaterCitessFailure(){
 			
-			String actual = object.greaterCites(distance,cities);
-		assertNotEquals("The city which is 52 kms from Zurich is  LUCERNE",actual);
+			String[] actual = object.greaterCites(distance,cities);
+		assertNotEquals("LUCERNE",actual);
 	}
 	@Test
 	public void nearZurichh(){
 
-		String actual = object.nearZurich(distance,cities);
-		assertNotEquals("The cities which is greater than or equal to 270 kms from Zurich are  GENEVA",actual);
+		String []actual = object.nearZurich(distance,cities);
+		assertEquals("GENEVA",actual);
+	}
+	@Test
+	public void greaterCites(){
+
+		String[] actual = object.greaterCites(distance,cities);
+		assertEquals("LUCERNE",actual);
 	}
 	
 }

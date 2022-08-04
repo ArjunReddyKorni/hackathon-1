@@ -17,8 +17,10 @@ public class SortingCities
 				System.out.print(upperCase[i]+ ", ");
 		}
 		System.out.println();
-		object.nearZurich(distance,upperCase);
-		object.greaterCites(distance,upperCase);
+		String [] temp = object.nearZurich(distance,upperCase);
+		System.out.println(temp[0]);
+		String []temp2 = object.greaterCites(distance,upperCase);
+		System.out.println(temp2[0]);
 
     }
 	public String[] toUpperCase(String []cities){
@@ -32,23 +34,24 @@ public class SortingCities
 
 		return upperCase;	
 	}
-	public String greaterCites(int []distance, String []cities){
-
+	public String[] greaterCites(int []distance, String []cities){
+			String [] temp2 = new String[cities.length];
 		for(int i =0;i < distance.length;i++){
 			if(distance[i] >= 270)
-
-			System.out.print("The cities which is greater than or equal to 270 kms from Zurich are  "+ cities[i]);
+				temp2[0] = cities[i];
+			//System.out.print("The cities which is greater than or equal to 270 kms from Zurich are  "+ cities[i]);
 		}
-        return null;
+        return temp2;
     }
-	public String nearZurich(int [] distance, String []cities){
-
+	public String[] nearZurich(int [] distance, String []cities){
+			String [] temp = new String[cities.length];
 			for(int i=0;i < cities.length;i++){
 
 				if(distance[i] == 52 )
-				System.out.println( "The city which is 52 kms from Zurich is  "+ cities[i] );
+					temp[0]=cities[i];
+				//temp = System.out.println( "The city which is 52 kms from Zurich is  "+ cities[i] );
 			}
 
-		return null;
+		return temp;
 	}
 }
