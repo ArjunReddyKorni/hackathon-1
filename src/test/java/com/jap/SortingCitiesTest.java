@@ -34,10 +34,10 @@ public class SortingCitiesTest {
 	@Test
 	public void greaterCites(){
 
-		assertEquals(,object.ToUpperCase(cities));
+		assertEquals(,object.greaterCites(cities));
 	}
 	@Test
 	public void nearZurich(){
-		assertEquals(,object.ToUpperCase(cities));
+		assertEquals(,object.nearZurich(cities));
 	}
 }
