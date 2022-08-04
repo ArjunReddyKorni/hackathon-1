@@ -14,8 +14,12 @@ public class SortingCities
 
     }
 	public  String[] toUpperCase(String []cites){
+
 			String [] upperCase = new String[cites.length];
 
-			for(int i =0;i < cites.length;i++)
+			for(int i =0;i < cites.length;i++){
+				upperCase[i] = cities[i].toUpperCase;
+
+			}
 	}
 }
