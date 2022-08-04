@@ -12,20 +12,20 @@ public class SortingCities
 		String [] cities = {"Bern","Lucerne","Interlaken","Grindelwald","Engelberg","Geneva","Murren","Basel","Zermatt","Jungfraujoch"};
 		int [] distance = {138,52,118,136,85,276,103,87,214,101};
 
-		String [] upperCase = object.toUpperCasee(cities);
+		String [] upperCase = object.toUpperCase(cities);
 		for(int i =0;i< cities.length;i++){
-				System.out.println(upperCase[i]+ ", ");
+				System.out.print(upperCase[i]+ ", ");
 		}
-		object.nearZurich(distance,cities);
-		object.greaterCites(distance,cities);
+		object.nearZurich(distance,upperCase);
+		object.greaterCites(distance,upperCase);
 
     }
-	public String[] toUpperCasee(String []cities){
+	public String[] toUpperCase(String []cities){
 
 			String [] upperCase = new String[cities.length];
 
 			for(int i =0;i < cities.length;i++){
-				upperCase[i] = cities[i].toUpperCase;
+				upperCase[i] = cities[i].toUpperCase();
 
 			}
 

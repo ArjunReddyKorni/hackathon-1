@@ -10,6 +10,8 @@ public class SortingCitiesTest {
     @Before
     public void setUp()  {
     }
+	@test
+	public void toUpperCase()
 
     @After
     public void tearDown()  {
