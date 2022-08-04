@@ -31,5 +31,12 @@ public class SortingCities
 			System.out.print(distance[i] + ", ");
 		}
 	}
-	public 
+	public void nearZurich{int [] distance,String []cities}{
+
+			for{i=0;i<cities.lenth;i++}{
+
+				if(distance[i] == )
+			}
+
+	}
 }
