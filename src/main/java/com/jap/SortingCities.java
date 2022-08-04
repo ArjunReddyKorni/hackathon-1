@@ -16,6 +16,7 @@ public class SortingCities
 		for(int i =0;i< cities.length;i++){
 				System.out.print(upperCase[i]+ ", ");
 		}
+		System.out.println();
 		object.nearZurich(distance,upperCase);
 		object.greaterCites(distance,upperCase);
 
@@ -35,7 +36,8 @@ public class SortingCities
 
 		for(int i =0;i < distance.length;i++){
 			if(distance[i] >= 270)
-			System.out.print(cities[i] + ", ");
+
+			System.out.print(cities[i] + "The cities which is greater than or equal to 270 kms from Zurich are  "+ cities[i]);
 		}
 	}
 	public void nearZurich(int [] distance, String []cities){
@@ -43,7 +45,7 @@ public class SortingCities
 			for(int i=0;i < cities.length;i++){
 
 				if(distance[i] == 52 )
-				System.out.println(cities[i]);
+				System.out.println( "The city which is 52 kms from Zurich is"+ cities[i] );
 			}
 
 	}
