@@ -37,7 +37,7 @@ public class SortingCities
 		for(int i =0;i < distance.length;i++){
 			if(distance[i] >= 270)
 
-			System.out.print(cities[i] + "The cities which is greater than or equal to 270 kms from Zurich are  "+ cities[i]);
+			System.out.print("The cities which is greater than or equal to 270 kms from Zurich are  "+ cities[i]);
 		}
 	}
 	public void nearZurich(int [] distance, String []cities){
