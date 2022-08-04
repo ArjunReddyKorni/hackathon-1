@@ -8,6 +8,10 @@ public class SortingCities
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        SortingCities object = new SortingCities();
+		String [] cities = {Bern,Lucerne,Interlaken,Grindelwald,Engelberg,Geneva,Murren,Basel,Zermatt,Jungfraujoch}
     }
+	public  void sorting(String []cites){
+
+	}
 }
