@@ -2,42 +2,48 @@ package com.jap;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class SortingCitiesTest {
 	SortingCities object;
 	String [] cities;
-	String [] distance;
+	int [] distance;
     @Before
     public void setUp()  {
 
 		object = new SortingCities();
-     cities = {"Bern","Lucerne","Interlaken","Grindelwald","Engelberg","Geneva","Murren","Basel","Zermatt","Jungfraujoch"};
-   distance = {138,52,118,136,85,276,103,87,214,101};
+     cities = new String[]{"Bern","Lucerne","Interlaken","Grindelwald","Engelberg","Geneva","Murren","Basel","Zermatt","Jungfraujoch"};
+   distance = new int[]{138,52,118,136,85,276,103,87,214,101};
 
     }
 	
     @After
     public void tearDown()  {
-		toUpperCase = null;
-		greaterCites = null;
-		nearZurich = null;
+		//toUpperCasee = null;
+		//greaterCitess = null;
+		//nearZurichh = null;
 
     }
 
 	@Test
-	public void toUpperCase(){
-		assertEquals(,object.ToUpperCase(cities));
+	public void toUpperCasee(){
+		String actual = object.toUpperCase(cities);
+		assertEquals("BERN, LUCERNE, INTERLAKEN, GRINDELWALD, ENGELBERG, GENEVA, MURREN, BASEL, ZERMATT, JUNGFRAUJOCH,",actual);
 	}
     //write all the test cases here
 	@Test
-	public void greaterCites(){
-
-		assertEquals(,object.greaterCites(cities));
+	public void greaterCitess(){
+			
+			String actual = object.greaterCites(distance,cities);
+		assertEquals("The city which is 52 kms from Zurich is  LUCERNE",actual);
 	}
 	@Test
-	public void nearZurich(){
-		assertEquals(,object.nearZurich(cities));
+	public void nearZurichh(){
+
+		String actual = object.nearZurich(distance,cities);
+		assertEquals("The cities which is greater than or equal to 270 kms from Zurich are  GENEVA",actual);
 	}
+	
 }
