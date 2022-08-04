@@ -45,7 +45,7 @@ public class SortingCities
 			for(int i=0;i < cities.length;i++){
 
 				if(distance[i] == 52 )
-				System.out.println( "The city which is 52 kms from Zurich is"+ cities[i] );
+				System.out.println( "The city which is 52 kms from Zurich is  "+ cities[i] );
 			}
 
 	}
