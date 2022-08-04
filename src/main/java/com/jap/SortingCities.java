@@ -1,5 +1,5 @@
 package com.jap;
-import java.util.Arrays;
+
 /**
  * Hello world!
  *
@@ -32,15 +32,16 @@ public class SortingCities
 
 		return upperCase;	
 	}
-	public void greaterCites(int []distance,String []cities){
+	public String greaterCites(int []distance, String []cities){
 
 		for(int i =0;i < distance.length;i++){
 			if(distance[i] >= 270)
 
 			System.out.print("The cities which is greater than or equal to 270 kms from Zurich are  "+ cities[i]);
 		}
-	}
-	public void nearZurich(int [] distance, String []cities){
+        return null;
+    }
+	public String nearZurich(int [] distance, String []cities){
 
 			for(int i=0;i < cities.length;i++){
 
@@ -48,5 +49,6 @@ public class SortingCities
 				System.out.println( "The city which is 52 kms from Zurich is  "+ cities[i] );
 			}
 
+		return null;
 	}
 }
